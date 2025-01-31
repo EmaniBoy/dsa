@@ -11,13 +11,17 @@ int main(){
 
     //O(n^2)
     int arr[] = {12, 11, 13, 5, 6};
+    int totalSum = 0;
+    
     for(int i = 0; i < sizeof(arr); i++){
+        int currentSum = arr[i] + arr[i+1];
         for(int j = 0; j < sizeof(arr); j++){
-            printf("%d ", arr[j]);
+           totalSum += currentSum;
+           
         }
-        printf("\n");
+       
     }
-
+     printf("Total sum: %d\n", totalSum);
 
 
     return 0;
