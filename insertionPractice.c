@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 void insertion(int arr[], int n){
     for(int i = 0; i < n; i++){
         int key = arr[i];
@@ -8,4 +10,24 @@ void insertion(int arr[], int n){
         }
         arr[j + 1] = key;
     }
+}
+void printArray(int arr[], int n){
+    for(int i = 0; i < n; i++){
+        printf("%d ", arr[i]);
+    }
+    printf("\n");
+}
+int main(){
+    int arr[] = {24, 21, 3, 169, 89, 541};
+    int n = sizeof(arr) / sizeof(arr[0]);
+    
+
+    printf("Original array: ");
+    printArray(arr, n);
+
+    insertion(arr, n);
+    printf("Sorted array: \n");
+    printArray(arr, n);
+    return 0;
+    
 }
