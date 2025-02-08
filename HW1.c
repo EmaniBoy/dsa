@@ -54,6 +54,28 @@ int main(){
 
 
 
+    //Θ(nlogn) with log base 2                       // cost   times executed
+    for(int i = 0; i < n; i++){                      // c1      n
+        int j = 1;                                   // c2      n
+        while(j < n){                                // c3      logn
+            j = j * 2;                               // c4      logn
+        }
+    }
+
+
+
+
+
+    //Θ(nlogn) with log base 3                       // cost   times executed
+    for(int i = 0; i < n; i++){                      // c1      n
+        int j = 1;                                   // c2      n
+        while(j < n){                                // c3      logn
+            j = j * 3;                               // c4      logn
+        }
+    }
+
+
+    
     return 0;
 }
 
