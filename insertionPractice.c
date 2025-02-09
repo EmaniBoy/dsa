@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// insertion sort practice 
+//insertion sort practice 
 
 void insertionsort(int arr[], int n){
 
@@ -14,7 +14,6 @@ void insertionsort(int arr[], int n){
         }
 
         arr[j + 1] = key;
-
     }
 }
 
@@ -22,7 +21,6 @@ void printarray(int arr[], int n){
     for(int i = 0; i < n; i++){
         printf("%d, ", arr[i]);
     }
-
 }
 
 
